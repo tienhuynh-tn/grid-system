@@ -28,7 +28,7 @@
 
 - The grid system is a structure of horizontal and vertical lines that help divide the page layout and layout design elements accordingly.
 
-![Grid System Image](https://uyen.vn/wp-content/uploads/2011/11/image0041.jpg)
+![Grid System Image](https://miro.medium.com/max/2000/1*hw8EKWA-DNytrtbzgZ_dEw.png)
 
 - Role:
   - Applied in UI/UX design, special role in Responsive Web Design.
@@ -111,7 +111,6 @@
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
 }
-
 ```
 
 ### Column offset
@@ -120,6 +119,23 @@
   - `c-o-*` - mean column offset, is used for mobile device, * from 1 to 12 (based on 12 columns in Grid System)
   - `m-o-*` - mean medium offset, is used for tablet
   - `l-o-*` - mean large offset, is used for PC
+```
+.c-o-1 {
+    margin-left: 8.33333%;
+}
+.
+.
+.
+.m-o-1 {
+    margin-left: 8.33333%;
+}
+.
+.
+.
+.l-o-1 {
+    margin-left: 8.33333%;
+}
+```
 
 ### Breakpoints
 - grid.css is designed for mobile first
@@ -129,6 +145,7 @@
 - `@media (min-width: 1113px)`- For PCs with low resolution from 1113px and up
 
 ### Note
+- Adding `box-sizing: border-box;` in your css file. If this property is missing, your columns may not be on the same horizontal row.
 ```
 * {
   box-sizing: border-box;
