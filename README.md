@@ -1,6 +1,8 @@
-# GRID SYSTEM
+# GRID SYSTEM 
 
-:sunglasses: This file is used to implement grid system in web responsive design that makes everything easier :sunglasses:
+:sunglasses: This file is used to implement grid system in web responsive design that makes everything easier :sunglasses: 
+
+![Grid System Icon](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBFLqazOtesocUbT-MKuD36MZsfBvOrMp60A&usqp=CAU)
 
 ## Table of Contents
 - [What is grid system?](#what-is-grid-system)
@@ -10,7 +12,7 @@
   - [Column](#column)  
   - [Gutter](#gutter)  
   - [Margin](#margin)  
-- [Some definitions for the file grid.css](#some-defenitions-for-the-file-gridcss)
+- [Some definitions for the file grid.css](#some-definitions-for-the-file-gridcss)
   - [Class grid](#class-grid)
   - [Class wide](#class-wide)
   - [Class row](#class-row)
@@ -78,10 +80,53 @@
 }
 ```
 ### Class column
+- Column: `col`
+- Prefix class: 
+  - `c-*` - mean column, is used for mobile device, * from 0 to 12 (based on 12 columns in Grid System)
+  - `m-*` - mean medium, is used for tablet
+  - `l-*` - mean large, is used for PC
+```
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.
+.
+.
+.c-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.
+.
+.
+.m-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.
+.
+.
+.l-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+```
 
 ### Column offset
+- Column offset: `*-o-*` - Column offset helps to place columns anywhere between 1 - 11 in a 12-column layout.
+- Prefix class: 
+  - `c-o-*` - mean column offset, is used for mobile device, * from 1 to 12 (based on 12 columns in Grid System)
+  - `m-o-*` - mean medium offset, is used for tablet
+  - `l-o-*` - mean large offset, is used for PC
 
 ### Breakpoints
+- grid.css is designed for mobile first
+- `@media (min-width: 740px)` - For devices such as tablets from 740px and up
+- `@media (min-width: 740px) and (max-width: 1023px)` - For tablets and PCs with low resolution from 740px to 1023px
+- `@media (min-width: 1024px) and (max-width: 1239px)` - For PCs with low resolution from 1024px to 1239px
+- `@media (min-width: 1113px)`- For PCs with low resolution from 1113px and up
 
 ### Note
 ```
