@@ -12,7 +12,7 @@
   - [Margin](#margin)  
 - [Learn more](#learn-more)
 - [Reference](#reference)
-- [License & Copyright](#license-copyright)
+- [License & Copyright](#license--copyright)
 
 ## What is grid system?
 
